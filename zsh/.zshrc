@@ -122,6 +122,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # Add these at the bottom of your ~/.zshrc
+alias poweroff='systemctl poweroff'
+alias reboot='systemctl reboot'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -131,7 +133,9 @@ alias update='sudo apt update && sudo apt upgrade'
 alias zshconfig="nvim ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias tmux-dev='~/.local/bin/tmux-sessions/dev-session.sh'
-
+alias monerowallet="/home/adam/Desktop/monero-x86_64-linux-gnu-v0.18.3.4/monero-wallet-cli"
+alias fn='fzf | xargs -r nvim'
+alias ft='~/.local/bin/ft.sh'
 
 # pnpm
 export PNPM_HOME="/home/adam/.local/share/pnpm"
@@ -145,4 +149,11 @@ esac
 #rust 
 export PATH="$HOME/.cargo/bin:$PATH"
 #rust end
-#
+
+#solana
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+#solana end
+
+# Open in tmux popup if on tmux, otherwise use --height mode
+export FZF_DEFAULT_OPTS='--height 50% --layout reverse --border'
+#fzf end
