@@ -5,6 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export BROWSER="/usr/bin/brave-browser"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -157,3 +158,5 @@ export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 # Open in tmux popup if on tmux, otherwise use --height mode
 export FZF_DEFAULT_OPTS='--height 50% --layout reverse --border'
 #fzf end
+
+. "$HOME/.local/bin/env"
