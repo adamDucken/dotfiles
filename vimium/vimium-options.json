@@ -1,0 +1,4 @@
+{
+  "settingsVersion": "2.3",
+  "userDefinedLinkHintCss": "/* Import a thin monospace from Google Fonts (paste in a <style> or user CSS that supports @import) */\n@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap');\n\ndiv > .vimiumHintMarker {\n  background: rgba(0,0,0,0.9);\n  border: 1px solid rgba(255,255,255,0.06);\n  padding: 3px 6px;\n  border-radius: 4px;\n  box-shadow: none;\n}\n\n/* thin monospace text */\ndiv > .vimiumHintMarker span {\n  font-family: 'Fira Code', monospace;\n  font-size: 14px;\n  font-weight: 300;               /* low weight -> thinner glyphs */\n  letter-spacing: 0.6px;          /* slightly wider spacing feels thinner */\n  line-height: 1;\n  color: #e6f0ff;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  text-shadow: none;\n}"
+}
